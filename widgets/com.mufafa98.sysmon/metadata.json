@@ -1,0 +1,20 @@
+{
+    "KPlugin": {
+        "Id": "com.mufafa98.sysmon",
+        "Name": "System Monitor",
+        "Description": "A custom CPU and Memory monitoring widget",
+        "Icon": "sensors-applet",
+        "Version": "1.0",
+        "Authors": [
+            { "Name": "mufafa98" }
+        ],
+        "Category": "System Information",
+        "EnabledByDefault": true,
+        "License": "GPL-2.0+"
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API-Internal": "6.0",
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-MainScript": "ui/main.qml",
+    "X-Plasma-ConfigPlugins": "com.mufafa98.sysmon"
+}

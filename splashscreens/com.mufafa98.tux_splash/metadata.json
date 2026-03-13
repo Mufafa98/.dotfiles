@@ -1,0 +1,8 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Id": "com.mufafa98.tux_splash",
+        "Name": "TuxSplash",
+        "ServiceTypes": ["Plasma/LookAndFeel"]
+    }
+}

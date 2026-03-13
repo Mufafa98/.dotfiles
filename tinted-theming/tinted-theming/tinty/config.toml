@@ -1,0 +1,63 @@
+[[items]]
+name = "alacritty"
+path = "https://github.com/tinted-theming/tinted-terminal"
+themes-dir = "themes/alacritty"
+hook = "cp -f %f ~/.config/alacritty/colors.toml && touch ~/.config/alacritty/alacritty.toml"
+
+[[items]]
+name = "kdeplasma"
+path = "https://github.com/Mufafa98/base16-kdeplasma-NORMAL.git"
+themes-dir = "schemes-green"
+hook = "cp -f %f ~/.local/share/color-schemes/%n.colors && plasma-apply-colorscheme %n > /dev/null 2>&1 &"
+
+[[items]]
+name = "vscode"
+path = "https://github.com/tinted-theming/tinted-vscode"
+themes-dir = "themes/base16"
+hook = 'sed -i "s|\\\"workbench.colorTheme\\\": \\\".*\\\"|\\\"workbench.colorTheme\\\": \\\"%n\\\"|" ~/.config/Code/User/settings.json'
+
+[[items]]
+name = "kde-splash-colors"
+path = "https://github.com/tinted-theming/tinted-xresources"
+themes-dir = "xresources"
+hook = '''
+SPLASH_DIR="$HOME/.local/share/plasma/look-and-feel/com.mufafa98.tux_splash/contents/splash"
+QML_FILE="$SPLASH_DIR/Splash.qml"
+TEMPLATE_SVG="$SPLASH_DIR/images/tux-template.svg"
+TARGET_SVG="$SPLASH_DIR/images/tux.svg"
+
+# 1. Extract Colors
+# Base00 = Main Background
+# Base01 = Secondary Background (Used for Tux Body)
+# Base05 = Main Text (Used for Tux Belly)
+# Base0B = Green (Progress Bar)
+BASE00=$(grep "^#define base00" %f | cut -d " " -f 3)
+BASE01=$(grep "^#define base01" %f | cut -d " " -f 3)
+BASE02=$(grep "^#define base02" %f | cut -d " " -f 3)
+BASE05=$(grep "^#define base05" %f | cut -d " " -f 3)
+BASE0B=$(grep "^#define base0B" %f | cut -d " " -f 3)
+
+# 2. Patch the QML (Progress Bar)
+sed -i \
+-e "/id:[[:space:]]*root/{n; s/color: \".*\"/color: \"$BASE01\"/;}" \
+-e "/id:[[:space:]]*progressBarBg/{n; s/color: \".*\"/color: \"$BASE02\"/;}" \
+-e "/id:[[:space:]]*progressBarFill/{n; s/color: \".*\"/color: \"$BASE0B\"/;}" \
+"$QML_FILE"
+
+# 3. Patch the SVG
+# Always copy from template to target first so we have fresh colors to replace
+cp -f "$TEMPLATE_SVG" "$TARGET_SVG"
+
+# Replace Tux Body (#202020 and #000000) with Base01
+sed -i "s/#202020/$BASE00/gI" "$TARGET_SVG"
+sed -i "s/#000000/$BASE00/gI" "$TARGET_SVG"
+
+# Replace Tux Belly/Eyes (#ffffff) with Base05
+sed -i "s/#ffffff/$BASE05/gI" "$TARGET_SVG"
+'''
+
+[[items]]
+name = "tinted-nvim"
+path = "https://github.com/tinted-theming/tinted-nvim"
+themes-dir = "colors"
+supported-systems = ["base16", "base24"]

@@ -1,0 +1,327 @@
+SENSOR ID                                          FRIENDLY NAME                            RANGE               
+--------------------------------------------------------------------------------------------------------------
+cpu                                                CPUs                                     0 - 0               
+cpu/all                                            All                                      0 - 0               
+cpu/all/averageFrequency                           Average CPU Frequency                    0 - 0               
+cpu/all/averageTemperature                         Average CPU Temperature                  0 - 0               
+cpu/all/coreCount                                  Number of Cores                          0 - 0               
+cpu/all/cpuCount                                   Number of CPUs                           0 - 0               
+cpu/all/maximumFrequency                           Maximum CPU Frequency                    0 - 0               
+cpu/all/maximumTemperature                         Maximum CPU Temperature                  0 - 0               
+cpu/all/minimumFrequency                           Minimum CPU Frequency                    0 - 0               
+cpu/all/minimumTemperature                         Minimum CPU Temperature                  0 - 0               
+cpu/all/name                                       Name                                     0 - 0               
+cpu/all/system                                     System Usage                             0 - 100             
+cpu/all/usage                                      Total Usage                              0 - 100             
+cpu/all/user                                       User Usage                               0 - 100             
+cpu/all/wait                                       Wait Usage                               0 - 100             
+cpu/cpu0                                           Core 1                                   0 - 0               
+cpu/cpu0/frequency                                 Core 1 Current Frequency                 400 - 4500          
+cpu/cpu0/name                                      Name                                     0 - 0               
+cpu/cpu0/system                                    Core 1 System Usage                      0 - 100             
+cpu/cpu0/temperature                               Core 1 Current Temperature               0 - 100             
+cpu/cpu0/usage                                     Core 1 Total Usage                       0 - 100             
+cpu/cpu0/user                                      Core 1 User Usage                        0 - 100             
+cpu/cpu0/wait                                      Core 1 Wait Usage                        0 - 100             
+cpu/cpu1                                           Core 2                                   0 - 0               
+cpu/cpu1/frequency                                 Core 2 Current Frequency                 400 - 4500          
+cpu/cpu1/name                                      Name                                     0 - 0               
+cpu/cpu1/system                                    Core 2 System Usage                      0 - 100             
+cpu/cpu1/temperature                               Core 2 Current Temperature               0 - 100             
+cpu/cpu1/usage                                     Core 2 Total Usage                       0 - 100             
+cpu/cpu1/user                                      Core 2 User Usage                        0 - 100             
+cpu/cpu1/wait                                      Core 2 Wait Usage                        0 - 100             
+cpu/cpu10                                          Core 11                                  0 - 0               
+cpu/cpu10/frequency                                Core 11 Current Frequency                400 - 3300          
+cpu/cpu10/name                                     Name                                     0 - 0               
+cpu/cpu10/system                                   Core 11 System Usage                     0 - 100             
+cpu/cpu10/temperature                              Core 11 Current Temperature              0 - 100             
+cpu/cpu10/usage                                    Core 11 Total Usage                      0 - 100             
+cpu/cpu10/user                                     Core 11 User Usage                       0 - 100             
+cpu/cpu10/wait                                     Core 11 Wait Usage                       0 - 100             
+cpu/cpu11                                          Core 12                                  0 - 0               
+cpu/cpu11/frequency                                Core 12 Current Frequency                400 - 3300          
+cpu/cpu11/name                                     Name                                     0 - 0               
+cpu/cpu11/system                                   Core 12 System Usage                     0 - 100             
+cpu/cpu11/temperature                              Core 12 Current Temperature              0 - 100             
+cpu/cpu11/usage                                    Core 12 Total Usage                      0 - 100             
+cpu/cpu11/user                                     Core 12 User Usage                       0 - 100             
+cpu/cpu11/wait                                     Core 12 Wait Usage                       0 - 100             
+cpu/cpu12                                          Core 13                                  0 - 0               
+cpu/cpu12/frequency                                Core 13 Current Frequency                400 - 3300          
+cpu/cpu12/name                                     Name                                     0 - 0               
+cpu/cpu12/system                                   Core 13 System Usage                     0 - 100             
+cpu/cpu12/temperature                              Core 13 Current Temperature              0 - 100             
+cpu/cpu12/usage                                    Core 13 Total Usage                      0 - 100             
+cpu/cpu12/user                                     Core 13 User Usage                       0 - 100             
+cpu/cpu12/wait                                     Core 13 Wait Usage                       0 - 100             
+cpu/cpu13                                          Core 14                                  0 - 0               
+cpu/cpu13/frequency                                Core 14 Current Frequency                400 - 3300          
+cpu/cpu13/name                                     Name                                     0 - 0               
+cpu/cpu13/system                                   Core 14 System Usage                     0 - 100             
+cpu/cpu13/temperature                              Core 14 Current Temperature              0 - 100             
+cpu/cpu13/usage                                    Core 14 Total Usage                      0 - 100             
+cpu/cpu13/user                                     Core 14 User Usage                       0 - 100             
+cpu/cpu13/wait                                     Core 14 Wait Usage                       0 - 100             
+cpu/cpu14                                          Core 15                                  0 - 0               
+cpu/cpu14/frequency                                Core 15 Current Frequency                400 - 3300          
+cpu/cpu14/name                                     Name                                     0 - 0               
+cpu/cpu14/system                                   Core 15 System Usage                     0 - 100             
+cpu/cpu14/temperature                              Core 15 Current Temperature              0 - 100             
+cpu/cpu14/usage                                    Core 15 Total Usage                      0 - 100             
+cpu/cpu14/user                                     Core 15 User Usage                       0 - 100             
+cpu/cpu14/wait                                     Core 15 Wait Usage                       0 - 100             
+cpu/cpu15                                          Core 16                                  0 - 0               
+cpu/cpu15/frequency                                Core 16 Current Frequency                400 - 3300          
+cpu/cpu15/name                                     Name                                     0 - 0               
+cpu/cpu15/system                                   Core 16 System Usage                     0 - 100             
+cpu/cpu15/temperature                              Core 16 Current Temperature              0 - 100             
+cpu/cpu15/usage                                    Core 16 Total Usage                      0 - 100             
+cpu/cpu15/user                                     Core 16 User Usage                       0 - 100             
+cpu/cpu15/wait                                     Core 16 Wait Usage                       0 - 100             
+cpu/cpu2                                           Core 3                                   0 - 0               
+cpu/cpu2/frequency                                 Core 3 Current Frequency                 400 - 4500          
+cpu/cpu2/name                                      Name                                     0 - 0               
+cpu/cpu2/system                                    Core 3 System Usage                      0 - 100             
+cpu/cpu2/temperature                               Core 3 Current Temperature               0 - 100             
+cpu/cpu2/usage                                     Core 3 Total Usage                       0 - 100             
+cpu/cpu2/user                                      Core 3 User Usage                        0 - 100             
+cpu/cpu2/wait                                      Core 3 Wait Usage                        0 - 100             
+cpu/cpu3                                           Core 4                                   0 - 0               
+cpu/cpu3/frequency                                 Core 4 Current Frequency                 400 - 4500          
+cpu/cpu3/name                                      Name                                     0 - 0               
+cpu/cpu3/system                                    Core 4 System Usage                      0 - 100             
+cpu/cpu3/temperature                               Core 4 Current Temperature               0 - 100             
+cpu/cpu3/usage                                     Core 4 Total Usage                       0 - 100             
+cpu/cpu3/user                                      Core 4 User Usage                        0 - 100             
+cpu/cpu3/wait                                      Core 4 Wait Usage                        0 - 100             
+cpu/cpu4                                           Core 5                                   0 - 0               
+cpu/cpu4/frequency                                 Core 5 Current Frequency                 400 - 4500          
+cpu/cpu4/name                                      Name                                     0 - 0               
+cpu/cpu4/system                                    Core 5 System Usage                      0 - 100             
+cpu/cpu4/temperature                               Core 5 Current Temperature               0 - 100             
+cpu/cpu4/usage                                     Core 5 Total Usage                       0 - 100             
+cpu/cpu4/user                                      Core 5 User Usage                        0 - 100             
+cpu/cpu4/wait                                      Core 5 Wait Usage                        0 - 100             
+cpu/cpu5                                           Core 6                                   0 - 0               
+cpu/cpu5/frequency                                 Core 6 Current Frequency                 400 - 4500          
+cpu/cpu5/name                                      Name                                     0 - 0               
+cpu/cpu5/system                                    Core 6 System Usage                      0 - 100             
+cpu/cpu5/temperature                               Core 6 Current Temperature               0 - 100             
+cpu/cpu5/usage                                     Core 6 Total Usage                       0 - 100             
+cpu/cpu5/user                                      Core 6 User Usage                        0 - 100             
+cpu/cpu5/wait                                      Core 6 Wait Usage                        0 - 100             
+cpu/cpu6                                           Core 7                                   0 - 0               
+cpu/cpu6/frequency                                 Core 7 Current Frequency                 400 - 4500          
+cpu/cpu6/name                                      Name                                     0 - 0               
+cpu/cpu6/system                                    Core 7 System Usage                      0 - 100             
+cpu/cpu6/temperature                               Core 7 Current Temperature               0 - 100             
+cpu/cpu6/usage                                     Core 7 Total Usage                       0 - 100             
+cpu/cpu6/user                                      Core 7 User Usage                        0 - 100             
+cpu/cpu6/wait                                      Core 7 Wait Usage                        0 - 100             
+cpu/cpu7                                           Core 8                                   0 - 0               
+cpu/cpu7/frequency                                 Core 8 Current Frequency                 400 - 4500          
+cpu/cpu7/name                                      Name                                     0 - 0               
+cpu/cpu7/system                                    Core 8 System Usage                      0 - 100             
+cpu/cpu7/temperature                               Core 8 Current Temperature               0 - 100             
+cpu/cpu7/usage                                     Core 8 Total Usage                       0 - 100             
+cpu/cpu7/user                                      Core 8 User Usage                        0 - 100             
+cpu/cpu7/wait                                      Core 8 Wait Usage                        0 - 100             
+cpu/cpu8                                           Core 9                                   0 - 0               
+cpu/cpu8/frequency                                 Core 9 Current Frequency                 400 - 3300          
+cpu/cpu8/name                                      Name                                     0 - 0               
+cpu/cpu8/system                                    Core 9 System Usage                      0 - 100             
+cpu/cpu8/temperature                               Core 9 Current Temperature               0 - 100             
+cpu/cpu8/usage                                     Core 9 Total Usage                       0 - 100             
+cpu/cpu8/user                                      Core 9 User Usage                        0 - 100             
+cpu/cpu8/wait                                      Core 9 Wait Usage                        0 - 100             
+cpu/cpu9                                           Core 10                                  0 - 0               
+cpu/cpu9/frequency                                 Core 10 Current Frequency                400 - 3300          
+cpu/cpu9/name                                      Name                                     0 - 0               
+cpu/cpu9/system                                    Core 10 System Usage                     0 - 100             
+cpu/cpu9/temperature                               Core 10 Current Temperature              0 - 100             
+cpu/cpu9/usage                                     Core 10 Total Usage                      0 - 100             
+cpu/cpu9/user                                      Core 10 User Usage                       0 - 100             
+cpu/cpu9/wait                                      Core 10 Wait Usage                       0 - 100             
+cpu/loadaverages                                   Load Averages                            0 - 0               
+cpu/loadaverages/loadaverage1                      Load average (1 minute)                  0 - 0               
+cpu/loadaverages/loadaverage15                     Load average (15 minute)                 0 - 0               
+cpu/loadaverages/loadaverage5                      Load average (5 minutes)                 0 - 0               
+disk                                               Disks                                    0 - 0               
+disk/3f4bfa51-105b-4c05-8520-169706c17e11          134.5 GiB Internal Drive (nvme0n1p7)     0 - 0               
+disk/3f4bfa51-105b-4c05-8520-169706c17e11/free     134.5 GiB Internal Drive (nvme0n1p7) Free Space 0 - 140984000000    
+disk/3f4bfa51-105b-4c05-8520-169706c17e11/freeP..  134.5 GiB Internal Drive (nvme0n1p7) Percentage Free 0 - 100             
+disk/3f4bfa51-105b-4c05-8520-169706c17e11/name     Name                                     0 - 0               
+disk/3f4bfa51-105b-4c05-8520-169706c17e11/read     134.5 GiB Internal Drive (nvme0n1p7) Read Rate 0 - 0               
+disk/3f4bfa51-105b-4c05-8520-169706c17e11/total    134.5 GiB Internal Drive (nvme0n1p7) Total Space 0 - 0               
+disk/3f4bfa51-105b-4c05-8520-169706c17e11/used     134.5 GiB Internal Drive (nvme0n1p7) Used Space 0 - 140984000000    
+disk/3f4bfa51-105b-4c05-8520-169706c17e11/usedP..  134.5 GiB Internal Drive (nvme0n1p7) Percentage Used 0 - 100             
+disk/3f4bfa51-105b-4c05-8520-169706c17e11/write    134.5 GiB Internal Drive (nvme0n1p7) Write Rate 0 - 0               
+disk/a06214db-92ad-4e3f-a19c-01042aaff607          100.0 GiB Internal Drive (nvme0n1p6)     0 - 0               
+disk/a06214db-92ad-4e3f-a19c-01042aaff607/free     100.0 GiB Internal Drive (nvme0n1p6) Free Space 0 - 105089000000    
+disk/a06214db-92ad-4e3f-a19c-01042aaff607/freeP..  100.0 GiB Internal Drive (nvme0n1p6) Percentage Free 0 - 100             
+disk/a06214db-92ad-4e3f-a19c-01042aaff607/name     Name                                     0 - 0               
+disk/a06214db-92ad-4e3f-a19c-01042aaff607/read     100.0 GiB Internal Drive (nvme0n1p6) Read Rate 0 - 0               
+disk/a06214db-92ad-4e3f-a19c-01042aaff607/total    100.0 GiB Internal Drive (nvme0n1p6) Total Space 0 - 0               
+disk/a06214db-92ad-4e3f-a19c-01042aaff607/used     100.0 GiB Internal Drive (nvme0n1p6) Used Space 0 - 105089000000    
+disk/a06214db-92ad-4e3f-a19c-01042aaff607/usedP..  100.0 GiB Internal Drive (nvme0n1p6) Percentage Used 0 - 100             
+disk/a06214db-92ad-4e3f-a19c-01042aaff607/write    100.0 GiB Internal Drive (nvme0n1p6) Write Rate 0 - 0               
+disk/all                                           All Disks                                0 - 0               
+disk/all/free                                      Free Space                               0 - 246073000000    
+disk/all/freePercent                               Percentage Free                          0 - 100             
+disk/all/read                                      Read Rate                                0 - 0               
+disk/all/total                                     Total Space                              0 - 0               
+disk/all/used                                      Used Space                               0 - 246073000000    
+disk/all/usedPercent                               Percentage Used                          0 - 100             
+disk/all/write                                     Write Rate                               0 - 0               
+disk/nvme0n1                                       476.9 GiB Internal Drive (nvme0n1)       0 - 0               
+disk/nvme0n1/read                                  476.9 GiB Internal Drive (nvme0n1) Read Rate 0 - 0               
+disk/nvme0n1/total                                 476.9 GiB Internal Drive (nvme0n1) Total Space 0 - 0               
+disk/nvme0n1/write                                 476.9 GiB Internal Drive (nvme0n1) Write Rate 0 - 0               
+gpu                                                GPU                                      0 - 0               
+gpu/all                                            All GPUs                                 0 - 0               
+gpu/all/totalVram                                  All GPUs Total Memory                    0 - 0               
+gpu/all/usage                                      All GPUs Usage                           0 - 100             
+gpu/all/usedVram                                   All GPUs Used Memory                     0 - 0               
+gpu/gpu0                                           GPU 1                                    0 - 0               
+gpu/gpu0/memoryFrequency                           GPU 1 Memory Frequency                   0 - 0               
+gpu/gpu0/name                                      GPU 1 Name                               0 - 0               
+gpu/gpu0/power                                     GPU 1 Power                              0 - 0               
+gpu/gpu0/temperature                               GPU 1 Temperature                        0 - 0               
+gpu/gpu0/totalVram                                 GPU 1 Total Video Memory                 0 - 0               
+gpu/gpu0/usage                                     GPU 1 Usage                              0 - 100             
+gpu/gpu0/usedVram                                  GPU 1 Video Memory Used                  0 - 0               
+gpu/gpu1                                           GPU 2                                    0 - 0               
+gpu/gpu1/coreFrequency                             GPU 2 Frequency                          0 - 0               
+gpu/gpu1/memoryFrequency                           GPU 2 Memory Frequency                   0 - 0               
+gpu/gpu1/name                                      GPU 2 Name                               0 - 0               
+gpu/gpu1/power                                     GPU 2 Power                              0 - 0               
+gpu/gpu1/temperature                               GPU 2 Temperature                        0 - 0               
+gpu/gpu1/totalVram                                 GPU 2 Total Video Memory                 0 - 0               
+gpu/gpu1/usage                                     GPU 2 Usage                              0 - 100             
+gpu/gpu1/usedVram                                  GPU 2 Video Memory Used                  0 - 0               
+gpu/gpu1/video                                     GPU 2 Video Usage                        0 - 100             
+lmsensors                                          Hardware Sensors                         0 - 0               
+lmsensors/BAT0-acpi-0                              BAT0-acpi-0                              0 - 0               
+lmsensors/BAT0-acpi-0/in0                          Voltage 0                                0 - 0               
+lmsensors/BAT0-acpi-0/power1                       power1                                   0 - 0               
+lmsensors/acpitz-acpi-0                            acpitz-acpi-0                            0 - 0               
+lmsensors/acpitz-acpi-0/temp1                      Temperature 1                            0 - 0               
+lmsensors/hp-isa-0000                              hp-isa-0000                              0 - 0               
+lmsensors/hp-isa-0000/fan1                         Fan 1                                    0 - 0               
+lmsensors/hp-isa-0000/fan2                         Fan 2                                    0 - 0               
+lmsensors/mt7921_phy0-pci-0400                     mt7921_phy0-pci-0400                     0 - 0               
+lmsensors/mt7921_phy0-pci-0400/temp1               Temperature 1                            0 - 0               
+lmsensors/nvme-pci-0200                            nvme-pci-0200                            0 - 0               
+lmsensors/nvme-pci-0200/temp1                      Composite                                -273 - 85           
+lmsensors/nvme-pci-0200/temp2                      Sensor 1                                 -273 - 65262        
+lmsensors/nvme-pci-0200/temp3                      Sensor 2                                 -273 - 65262        
+memory                                             Memory                                   0 - 0               
+memory/physical                                    Physical Memory                          0 - 0               
+memory/physical/application                        Application Memory                       0 - 16409000000     
+memory/physical/applicationPercent                 Application Memory Percentage            0 - 100             
+memory/physical/buffer                             Buffer Memory                            0 - 16409000000     
+memory/physical/bufferPercent                      Buffer Memory Percentage                 0 - 100             
+memory/physical/cache                              Cache Memory                             0 - 16409000000     
+memory/physical/cachePercent                       Cache Memory Percentage                  0 - 100             
+memory/physical/free                               Free Physical Memory                     0 - 16409000000     
+memory/physical/freePercent                        Free Physical Memory Percentage          0 - 100             
+memory/physical/total                              Total Physical Memory                    0 - 0               
+memory/physical/used                               Used Physical Memory                     0 - 16409000000     
+memory/physical/usedPercent                        Used Physical Memory Percentage          0 - 100             
+memory/swap                                        Swap Memory                              0 - 0               
+memory/swap/free                                   Free Swap Memory                         0 - 4294960000      
+memory/swap/freePercent                            Free Swap Memory Percentage              0 - 100             
+memory/swap/total                                  Total Swap Memory                        0 - 0               
+memory/swap/used                                   Used Swap Memory                         0 - 4294960000      
+memory/swap/usedPercent                            Used Swap Memory Percentage              0 - 100             
+network                                            Network Devices                          0 - 0               
+network/all                                        All Network Devices                      0 - 0               
+network/all/download                               Download Rate                            0 - 0               
+network/all/downloadBits                           Download Rate                            0 - 0               
+network/all/totalDownload                          Total Downloaded                         0 - 0               
+network/all/totalUpload                            Total Uploaded                           0 - 0               
+network/all/upload                                 Upload Rate                              0 - 0               
+network/all/uploadBits                             Upload Rate                              0 - 0               
+network/wlan0                                      DIGI-74Xb                                0 - 0               
+network/wlan0/download                             DIGI-74Xb Download Rate                  0 - 0               
+network/wlan0/downloadBits                         DIGI-74Xb Download Rate                  0 - 0               
+network/wlan0/ipv4address                          DIGI-74Xb IPv4 Address                   0 - 0               
+network/wlan0/ipv4dns                              DIGI-74Xb IPv4 DNS                       0 - 0               
+network/wlan0/ipv4gateway                          DIGI-74Xb IPv4 Gateway                   0 - 0               
+network/wlan0/ipv4subnet                           DIGI-74Xb IPv4 Subnet Mask               0 - 0               
+network/wlan0/ipv4withPrefixLength                 DIGI-74Xb IPv4 with Prefix Length        0 - 0               
+network/wlan0/ipv6address                          DIGI-74Xb IPv6 Address                   0 - 0               
+network/wlan0/ipv6dns                              DIGI-74Xb IPv6 DNS                       0 - 0               
+network/wlan0/ipv6gateway                          DIGI-74Xb IPv6 Gateway                   0 - 0               
+network/wlan0/ipv6subnet                           DIGI-74Xb IPv6 Subnet Mask               0 - 0               
+network/wlan0/ipv6withPrefixLength                 DIGI-74Xb IPv6 with Prefix Length        0 - 0               
+network/wlan0/network                              DIGI-74Xb Network Name                   0 - 0               
+network/wlan0/signal                               DIGI-74Xb Signal Strength                0 - 100             
+network/wlan0/totalDownload                        DIGI-74Xb Total Downloaded               0 - 0               
+network/wlan0/totalUpload                          DIGI-74Xb Total Uploaded                 0 - 0               
+network/wlan0/upload                               DIGI-74Xb Upload Rate                    0 - 0               
+network/wlan0/uploadBits                           DIGI-74Xb Upload Rate                    0 - 0               
+os                                                 Operating System                         0 - 0               
+os/kernel                                          Kernel                                   0 - 0               
+os/kernel/name                                     Kernel Name                              0 - 0               
+os/kernel/prettyName                               Kernel Name and Version                  0 - 0               
+os/kernel/version                                  Kernel Version                           0 - 0               
+os/plasma                                          KDE Plasma                               0 - 0               
+os/plasma/kfVersion                                KDE Frameworks Version                   0 - 0               
+os/plasma/plasmaVersion                            KDE Plasma Version                       0 - 0               
+os/plasma/qtVersion                                Qt Version                               0 - 0               
+os/plasma/windowsystem                             Window System                            0 - 0               
+os/system                                          System                                   0 - 0               
+os/system/hostname                                 Hostname                                 0 - 0               
+os/system/logo                                     Operating System Logo                    0 - 0               
+os/system/name                                     Operating System Name                    0 - 0               
+os/system/prettyName                               Operating System Name and Version        0 - 0               
+os/system/uptime                                   Uptime                                   0 - 0               
+os/system/url                                      Operating System URL                     0 - 0               
+os/system/version                                  Operating System Version                 0 - 0               
+power                                              Power                                    0 - 0               
+power/5b-dd-6b-1d                                  Logitech G305                            0 - 0               
+power/5b-dd-6b-1d/capacity                         Logitech G305 Current Capacity           0 - 0               
+power/5b-dd-6b-1d/charge                           Logitech G305 Charge                     0 - 0               
+power/5b-dd-6b-1d/chargePercentage                 Logitech G305 Charge Percentage          0 - 100             
+power/5b-dd-6b-1d/chargeRate                       Logitech G305 Charging Rate              0 - 0               
+power/5b-dd-6b-1d/design                           Logitech G305 Design Capacity            0 - 0               
+power/5b-dd-6b-1d/health                           Logitech G305 Health                     0 - 100             
+power/5b-dd-6b-1d/name                             Name                                     0 - 0               
+power/SerialNumber                                 Lithium Ion Battery                      0 - 0               
+power/SerialNumber/capacity                        Lithium Ion Battery Current Capacity     0 - 70              
+power/SerialNumber/charge                          Lithium Ion Battery Charge               0 - 61              
+power/SerialNumber/chargePercentage                Lithium Ion Battery Charge Percentage    0 - 100             
+power/SerialNumber/chargeRate                      Lithium Ion Battery Charging Rate        0 - 0               
+power/SerialNumber/design                          Lithium Ion Battery Design Capacity      70 - 70             
+power/SerialNumber/health                          Lithium Ion Battery Health               0 - 100             
+power/SerialNumber/name                            Name                                     0 - 0               
+pressure                                           Pressure                                 0 - 0               
+pressure/cpu                                       CPU Pressure                             0 - 0               
+pressure/cpu/full10Sec                             Full (10 second average)                 0 - 100             
+pressure/cpu/full300Sec                            Full (5 minute average)                  0 - 100             
+pressure/cpu/full60Sec                             Full (1 minute average)                  0 - 100             
+pressure/cpu/fullTotal                             Total Full Stall Time                    0 - 0               
+pressure/cpu/some10Sec                             Some (10 second average)                 0 - 100             
+pressure/cpu/some300Sec                            Some (5 minute average)                  0 - 100             
+pressure/cpu/some60Sec                             Some (1 minute average)                  0 - 100             
+pressure/cpu/someTotal                             Total Some Stall Time                    0 - 0               
+pressure/io                                        IO Pressure                              0 - 0               
+pressure/io/full10Sec                              Full (10 second average)                 0 - 100             
+pressure/io/full300Sec                             Full (5 minute average)                  0 - 100             
+pressure/io/full60Sec                              Full (1 minute average)                  0 - 100             
+pressure/io/fullTotal                              Total Full Stall Time                    0 - 0               
+pressure/io/some10Sec                              Some (10 second average)                 0 - 100             
+pressure/io/some300Sec                             Some (5 minute average)                  0 - 100             
+pressure/io/some60Sec                              Some (1 minute average)                  0 - 100             
+pressure/io/someTotal                              Total Some Stall Time                    0 - 0               
+pressure/memory                                    Memory Pressure                          0 - 0               
+pressure/memory/full10Sec                          Full (10 second average)                 0 - 100             
+pressure/memory/full300Sec                         Full (5 minute average)                  0 - 100             
+pressure/memory/full60Sec                          Full (1 minute average)                  0 - 100             
+pressure/memory/fullTotal                          Total Full Stall Time                    0 - 0               
+pressure/memory/some10Sec                          Some (10 second average)                 0 - 100             
+pressure/memory/some300Sec                         Some (5 minute average)                  0 - 100             
+pressure/memory/some60Sec                          Some (1 minute average)                  0 - 100             
+pressure/memory/someTotal                          Total Some Stall Time                    0 - 0               

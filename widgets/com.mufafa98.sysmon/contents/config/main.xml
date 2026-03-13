@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/2.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/2.0
+      http://www.kde.org/standards/kcfg/2.0/kcfg.xsd">
+    <kcfgfile name=""/>
+
+    <group name="General">
+        <entry name="sensorGap" type="Int">
+            <default>10</default>
+            <label>Gap between sensor displays (in pixels)</label>
+        </entry>
+        <entry name="updateInterval" type="Int">
+            <default>1000</default>
+            <label>Update interval in milliseconds</label>
+        </entry>
+        <entry name="fontSize" type="Int">
+            <default>12</default>
+            <label>Font size for sensor text</label>
+        </entry>
+        <entry name="textFont" type="String">
+            <default>sans-serif</default>
+        </entry>
+        <entry name="iconFont" type="String">
+            <default>sans-serif</default>
+        </entry>
+    </group>
+
+    <group name="Steps">
+        <!-- CPU Configuration -->
+        <entry name="cpuEnabled" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="cpuUnicode" type="String">
+            <default>\uf4bc</default>
+        </entry>
+        <entry name="cpuColor" type="String">
+            <default>#ffff00,#ff8800,#ff0000</default>
+        </entry>
+        <entry name="cpuLevel" type="String">
+            <default>50,75,90</default>
+        </entry>
+        
+        <!-- RAM Configuration -->
+        <entry name="ramEnabled" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="ramUnicode" type="String">
+            <default>\uefc5</default>
+        </entry>
+        <entry name="ramColor" type="String">
+            <default>#ffff00,#ff8800,#ff0000</default>
+        </entry>
+        <entry name="ramLevel" type="String">
+            <default>50,75,90</default>
+        </entry>
+        
+        <!-- Battery Configuration -->
+        <entry name="batEnabled" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="batUnicode" type="String">
+            <default>\udb80\udc79</default>
+        </entry>
+        <entry name="batChargingUnicode" type="String">
+            <default>\udb80\udc84</default>
+        </entry>
+        <entry name="batColor" type="String">
+            <default>#ff8800,#00ff00,#ffff00</default>
+        </entry>
+        <entry name="batLevel" type="String">
+            <default>20,25,80</default>
+        </entry>
+        <!-- Keep your existing sensor entries -->
+    </group>
+</kcfg>
