@@ -21,3 +21,34 @@ keymap('v', '>', '>gv')
 
 keymap('n', '<C-/>', 'gcc', { remap = true })
 keymap('v', '<C-/>', 'gc', { remap = true })
+
+keymap("v", "J", ":m '>+1<CR>gv=gv")
+keymap("v", "K", ":m '<-2<CR>gv=gv")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
