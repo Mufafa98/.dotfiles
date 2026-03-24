@@ -7,7 +7,7 @@ return
         require("tinted-nvim").setup({
             default_scheme = "base16-everforest-dark-hard",
             apply_scheme_on_startup = true,
-            compile = true,
+            compile = false, -- was true
             capabilities = {
                 terminal_colors = true,
                 truecolor = true,
@@ -15,7 +15,23 @@ return
             },
             highlights = {
                 integrations = {},
-                overrides = function(_) return {} end,
+                overrides = function(_)
+                    local function gen_links(mappings)
+                        local result = {}
+                        for capture, target in pairs(mappings) do
+                            result[capture] = { link = target }
+                        end
+                        return result
+                    end
+                    return gen_links({
+                        ["@lsp.type.property.rust"] = "Identifier",
+                        ["@lsp.type.parameter.rust"] = "Identifier",
+                        ["@lsp.type.builtinType.rust"] = "Special",
+                        ["@type.builtin"] = "Special",
+                        ["@lsp.type.variable.rust"] = "Identifier",
+                        ["@lsp.mod.mutable.rust"] = "@markup.link.url",
+                    })
+                end,
                 use_lazy_specs = true
             },
             schemes = {},
