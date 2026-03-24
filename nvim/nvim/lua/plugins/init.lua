@@ -12,9 +12,16 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     { import = "plugins.lsp" },
-    { import = "plugins.editor" },
     { import = "plugins.tree" },
     { import = "plugins.tinty" },
+    { import = "plugins.ui.editor" },
+    { import = "plugins.ui.bufferline" },
+    {
+        "lewis6991/gitsigns.nvim",
+        config = function()
+            require('gitsigns').setup()
+        end
+    },
     {
         "folke/lazydev.nvim",
         ft = "lua",
