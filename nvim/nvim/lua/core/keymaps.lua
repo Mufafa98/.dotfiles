@@ -32,7 +32,7 @@ keymap("n", "<S-Tab>", "<cmd>BufferLineCyclePrev<CR>")
 keymap("n", "<leader>c", "<cmd>Bdelete<CR>")
 keymap("n", "<leader>p", "<cmd>BufferLinePick<CR>")
 
-
+keymap('n', 'ga', vim.lsp.buf.code_action, { desc = 'LSP code action' })
 
 
 
