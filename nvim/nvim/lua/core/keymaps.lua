@@ -27,15 +27,10 @@ keymap("v", "K", ":m '<-2<CR>gv=gv")
 
 
 
-
-
-
-
-
-
-
-
-
+keymap("n", "<Tab>", "<cmd>BufferLineCycleNext<CR>")
+keymap("n", "<S-Tab>", "<cmd>BufferLineCyclePrev<CR>")
+keymap("n", "<leader>c", "<cmd>Bdelete<CR>")
+keymap("n", "<leader>p", "<cmd>BufferLinePick<CR>")
 
 
 
