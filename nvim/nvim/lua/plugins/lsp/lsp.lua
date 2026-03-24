@@ -15,11 +15,14 @@ return {
     end,
     config = function()
         vim.diagnostic.config({
-            update_in_insert = true,
+            -- update_in_insert = true,
+            update_in_insert = false,
+            virtual_text = true,
+            signs = true,
+            underline = true,
         })
         local lsp_zero = require('lsp-zero')
         local cmp = require('cmp')
-
         lsp_zero.on_attach(function(_, bufnr)
             lsp_zero.default_keymaps({ buffer = bufnr })
             vim.keymap.set('n', 'gl', function()
@@ -44,9 +47,14 @@ return {
                 function(server_name)
                     require("lspconfig")[server_name].setup({})
                 end,
+                -- Specific handler for qmlls (overrides the default)
                 ["qmlls"] = function()
                     require("lspconfig").qmlls.setup({
-                        cmd = { "qmlls", "-I", "/usr/lib/qt6/qml" }
+                        cmd = {
+                            "qmlls",
+                            "-I", "/usr/lib/qt6/qml",
+                            "-I", "/usr/lib/qt/qml/org/kde"
+                        }
                     })
                 end,
             },
