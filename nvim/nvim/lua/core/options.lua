@@ -26,3 +26,12 @@ vim.opt.fillchars = {
 }
 vim.o.foldmethod = "expr"
 vim.o.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.api.nvim_create_autocmd("BufWinLeave", {
+    pattern = "*.*",
+    command = "mkview",
+})
+
+vim.api.nvim_create_autocmd("BufWinEnter", {
+    pattern = "*.*",
+    command = "silent! loadview",
+})
