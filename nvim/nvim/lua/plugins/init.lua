@@ -17,18 +17,6 @@ require("lazy").setup({
     { import = "plugins.ui.editor" },
     { import = "plugins.ui.bufferline" },
     {
-        "nvim-treesitter/nvim-treesitter",
-        build = ":TSUpdate",
-        branch = "master",
-        config = function()
-            require("nvim-treesitter.configs").setup({
-                ensure_installed = "all",
-                ignore_install = { "ipkg" },
-                highlight = { enable = true },
-            })
-        end,
-    },
-    {
         "kevinhwang91/nvim-ufo",
         dependencies = { "kevinhwang91/promise-async" },
         config = function()
