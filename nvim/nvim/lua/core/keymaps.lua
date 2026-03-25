@@ -34,7 +34,7 @@ keymap("n", "<leader>p", "<cmd>BufferLinePick<CR>")
 
 keymap('n', 'ga', vim.lsp.buf.code_action, { desc = 'LSP code action' })
 
-
+keymap({'n', 'i', 'v'}, '<C-s>', '<cmd>w<cr><esc>')
 
 
 
