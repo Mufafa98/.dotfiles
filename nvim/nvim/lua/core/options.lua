@@ -10,3 +10,19 @@ vim.o.writebackup = false
 vim.o.undofile = true
 
 vim.opt.termguicolors = true
+
+-- Folding
+vim.opt.foldcolumn = "1"    -- display fold icons on 1 column
+vim.opt.foldlevel = 99      -- close folds with a higher level
+vim.opt.foldlevelstart = 99 -- set foldlevel to 99 on new buffers
+vim.opt.foldenable = true
+vim.opt.fillchars = {
+  eob = " ",
+  -- folding fillchars
+  fold = " ",
+  foldopen = "",
+  foldclose = "",
+  foldsep = " ",
+}
+vim.o.foldmethod = "expr"
+vim.o.foldexpr = "v:lua.vim.treesitter.foldexpr()"
