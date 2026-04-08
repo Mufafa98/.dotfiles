@@ -24,6 +24,7 @@ return
                         return result
                     end
                     return gen_links({
+                        ["@variable.python"] = "Identifier",
                         ["@lsp.type.property.rust"] = "Identifier",
                         ["@lsp.type.parameter.rust"] = "Identifier",
                         ["@lsp.type.builtinType.rust"] = "Special",

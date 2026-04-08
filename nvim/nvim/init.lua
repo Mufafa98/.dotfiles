@@ -2,6 +2,14 @@ require("core.options")
 require("core.keymaps")
 require("plugins")
 
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 'python', 'lua' },
+  callback = function()
+    vim.treesitter.start()
+  end,
+})
+
+
 -- Create a command :ShowCaptures
 vim.api.nvim_create_user_command('ShowCaptures', function()
     local captures = vim.treesitter.get_captures_at_cursor()
