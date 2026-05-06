@@ -35,3 +35,6 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
     pattern = "*.*",
     command = "silent! loadview",
 })
+
+vim.opt.wrap = true
+vim.opt.breakindent = true

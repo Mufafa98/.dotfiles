@@ -25,11 +25,13 @@ return
                     end
                     return gen_links({
                         ["@variable.python"] = "Identifier",
+                        ["@variable.member.python"] = "Identifier",
                         ["@lsp.type.property.rust"] = "Identifier",
                         ["@lsp.type.parameter.rust"] = "Identifier",
                         ["@lsp.type.builtinType.rust"] = "Special",
                         ["@type.builtin"] = "Special",
                         ["@lsp.type.variable.rust"] = "Identifier",
+                        ["@lsp.type.typeAlias.rust"] = "Typedef",
                         ["@lsp.mod.mutable.rust"] = "@markup.link.url",
                     })
                 end,
