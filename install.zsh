@@ -3,6 +3,7 @@
 source stowdirs.zsh
 
 DOT_FILES=$HOME/Documents/github/.dotfiles
+CONFIG_TARGET=$HOME/.config
 WIDGET_TARGET="$HOME/.local/share/plasma/plasmoids"
 SPLASH_TARGET="$HOME/.local/share/plasma/look-and-feel"
 
@@ -12,6 +13,8 @@ stow_list() {
   local list=$1
   local target=$2
 
+  mkdir -p $target
+
   for folder in ${(s:,:)list}; do
     echo "Stowing $folder into $target"
     stow -D $folder
@@ -19,7 +22,7 @@ stow_list() {
   done
 }
 
-stow_list $STOW_TO_DOTCONFIG $DOT_FILES
+stow_list $STOW_TO_DOTCONFIG $CONFIG_TARGET
 
 stow_list $STOW_TO_WIDGET $WIDGET_TARGET
 
