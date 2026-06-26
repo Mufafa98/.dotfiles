@@ -2,8 +2,7 @@
 
 source stowdirs.zsh
 
-DOT_FILES=$HOME/Documents/github/.dotfiles
-CONFIG_TARGET=$HOME/.config
+DOT_FILES="$HOME/.config"
 WIDGET_TARGET="$HOME/.local/share/plasma/plasmoids"
 SPLASH_TARGET="$HOME/.local/share/plasma/look-and-feel"
 
@@ -22,10 +21,8 @@ stow_list() {
   done
 }
 
-stow_list $STOW_TO_DOTCONFIG $CONFIG_TARGET
-
+stow_list $STOW_TO_DOTCONFIG $DOT_FILES
 stow_list $STOW_TO_WIDGET $WIDGET_TARGET
-
 stow_list $STOW_TO_SPLASH $SPLASH_TARGET
 
 popd
