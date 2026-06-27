@@ -111,4 +111,3 @@ source $ZSH/oh-my-zsh.sh
 alias open=xdg-open
 hash -d master=$HOME/Documents/fii/master/MIAO1/
 export EDITOR=vim
-source  ~/.zsh/completions/tinty.sh

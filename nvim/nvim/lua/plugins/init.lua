@@ -16,6 +16,7 @@ require("lazy").setup({
     { import = "plugins.tinty" },
     { import = "plugins.ui.editor" },
     { import = "plugins.ui.bufferline" },
+    { import = "plugins.lualine" },
     {
         "kevinhwang91/nvim-ufo",
         dependencies = { "kevinhwang91/promise-async" },
