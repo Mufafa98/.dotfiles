@@ -8,6 +8,7 @@ vim.o.tabstop = 4
 vim.o.swapfile = false
 vim.o.writebackup = false
 vim.o.undofile = true
+vim.o.pumheight = 10
 
 vim.opt.termguicolors = true
 
