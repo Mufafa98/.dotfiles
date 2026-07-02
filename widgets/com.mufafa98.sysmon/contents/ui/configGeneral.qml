@@ -1,6 +1,6 @@
-import QtQuick 2.15
-import QtQuick.Controls 2.15 as QQC2
-import org.kde.kirigami 2.20 as Kirigami
+import QtQuick
+import QtQuick.Controls as QQC2
+import org.kde.kirigami as Kirigami
 import org.kde.ki18n
 import org.kde.plasma.plasmoid
 
@@ -10,7 +10,6 @@ Kirigami.FormLayout {
     property alias cfg_sensorGap: sensorGapSpinBox.value
     property alias cfg_updateInterval: updateIntervalSpinBox.value
     property alias cfg_fontSize: fontSizeSpinBox.value
-
     property alias cfg_textFont: textFontCombo.currentText
     property alias cfg_iconFont: iconFontCombo.currentText
 
