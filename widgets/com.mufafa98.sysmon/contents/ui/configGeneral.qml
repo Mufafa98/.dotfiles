@@ -16,7 +16,7 @@ Kirigami.FormLayout {
 
     QQC2.SpinBox {
         id: sensorGapSpinBox
-        Kirigami.FormData.label: KI18n.i18n("Gap between sensors (px):")
+        Kirigami.FormData.label: i18n("Gap between sensors (px):")
         from: 0
         to: 100
         stepSize: 1
@@ -24,7 +24,7 @@ Kirigami.FormLayout {
 
     QQC2.SpinBox {
         id: updateIntervalSpinBox
-        Kirigami.FormData.label: KI18n.i18n("Update interval (ms):")
+        Kirigami.FormData.label: i18n("Update interval (ms):")
         from: 100
         to: 10000
         stepSize: 100
@@ -32,7 +32,7 @@ Kirigami.FormLayout {
 
     QQC2.SpinBox {
         id: fontSizeSpinBox
-        Kirigami.FormData.label: KI18n.i18n("Font size:")
+        Kirigami.FormData.label: i18n("Font size:")
         from: 6
         to: 72
         stepSize: 1
@@ -40,14 +40,14 @@ Kirigami.FormLayout {
 
     QQC2.ComboBox {
         id: textFontCombo
-        Kirigami.FormData.label: KI18n.i18n("Text Font:")
+        Kirigami.FormData.label: i18n("Text Font:")
         model: Qt.fontFamilies()
         Component.onCompleted: currentIndex = indexOfValue(Plasmoid.configuration.textFont)
     }
 
     QQC2.ComboBox {
         id: iconFontCombo
-        Kirigami.FormData.label: KI18n.i18n("Icon Font:")
+        Kirigami.FormData.label: i18n("Icon Font:")
         model: Qt.fontFamilies()
         Component.onCompleted: currentIndex = indexOfValue(Plasmoid.configuration.iconFont)
     }
