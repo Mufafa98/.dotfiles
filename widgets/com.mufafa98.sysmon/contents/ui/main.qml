@@ -89,61 +89,46 @@ PlasmoidItem {
         anchors.centerIn: parent
         spacing: root.cfg("sensorGap", 10)
 
-
-        Row {
-            visible: root.cfg("cpuEnabled", true)
-            spacing: 5
-
-            PlasmaComponents.Label {
-                text: root.parseUnicode(root.cfg("cpuUnicode", "\uf4bc"))
-                font.family: root.cfg("iconFont", "sans-serif")
-                font.pixelSize: Kirigami.Units.gridUnit * (root.cfg("fontSize", 12) / 15.0)
-                color: root.getColorForValue(cpuSensor.value, root.cfg("cpuLevel", "50,75,90"), root.cfg("cpuColor", "#ffff00,#ff8800,#ff0000"))
-            }
-
-            PlasmaComponents.Label {
-                text: Math.round(cpuSensor.value) + "%"
-                font.family: root.cfg("textFont", "sans-serif")
-                font.pixelSize: Kirigami.Units.gridUnit * (root.cfg("fontSize", 12) / 15.0)
-                color: root.getColorForValue(cpuSensor.value, root.cfg("cpuLevel", "50,75,90"), root.cfg("cpuColor", "#ffff00,#ff8800,#ff0000"))
-            }
+        // Get the ordered list of sensor IDs
+        property var sensorIds: {
+            var order = root.cfg("sensorOrder", "cpu,ram,bat")
+            return order.split(",").map(s => s.trim())
         }
 
-        Row {
-            visible: root.cfg("ramEnabled", true)
-            spacing: 5
+        Repeater {
+            model: mainLayout.sensorIds
+            delegate: Row {
+                // Create a row for each sensor in order
+                visible: root.cfg(modelData + "Enabled", true)
+                spacing: 5
 
-            PlasmaComponents.Label {
-                text: root.parseUnicode(root.cfg("ramUnicode", "\uefc5"))
-                font.family: root.cfg("iconFont", "sans-serif")
-                font.pixelSize: Kirigami.Units.gridUnit * (root.cfg("fontSize", 12) / 15.0)
-                color: root.getColorForValue(ramSensor.value, root.cfg("ramLevel", "50,75,90"), root.cfg("ramColor", "#ffff00,#ff8800,#ff0000"))
-            }
+                // Determine which sensor to show based on modelData ("cpu", "ram", "bat")
+                property var sensorRef: {
+                    if (modelData === "cpu") return cpuSensor
+                    if (modelData === "ram") return ramSensor
+                    if (modelData === "bat") return batSensor
+                    return null
+                }
+                property var colorConfig: {
+                    if (modelData === "cpu") return { color: root.cfg("cpuColor", "#ffff00,#ff8800,#ff0000"), level: root.cfg("cpuLevel", "50,75,90"), unicode: root.cfg("cpuUnicode", "\uf4bc") }
+                    if (modelData === "ram") return { color: root.cfg("ramColor", "#ffff00,#ff8800,#ff0000"), level: root.cfg("ramLevel", "50,75,90"), unicode: root.cfg("ramUnicode", "\uefc5") }
+                    if (modelData === "bat") return { color: root.cfg("batColor", "#ff8800,#00ff00,#ffff00"), level: root.cfg("batLevel", "10,25,80"), unicode: root.cfg("batUnicode", "\udb80\udc79") }
+                    return { color: "gray", level: "50", unicode: "" }
+                }
 
-            PlasmaComponents.Label {
-                text: Math.round(ramSensor.value) + "%"
-                font.family: root.cfg("textFont", "sans-serif")
-                font.pixelSize: Kirigami.Units.gridUnit * (root.cfg("fontSize", 12) / 15.0)
-                color: root.getColorForValue(ramSensor.value, root.cfg("ramLevel", "50,75,90"), root.cfg("ramColor", "#ffff00,#ff8800,#ff0000"))
-            }
-        }
+                PlasmaComponents.Label {
+                    text: modelData === "bat" ? root.batIcon(0) : root.parseUnicode(colorConfig.unicode)
+                    font.family: root.cfg("iconFont", "sans-serif")
+                    font.pixelSize: Kirigami.Units.gridUnit * (root.cfg("fontSize", 12) / 15.0)
+                    color: root.getColorForValue(sensorRef ? sensorRef.value : 0, colorConfig.level, colorConfig.color)
+                }
 
-        Row {
-            visible: root.cfg("batEnabled", true)
-            spacing: 5
-
-            PlasmaComponents.Label {
-                text: root.batIcon(0)
-                font.family: root.cfg("iconFont", "sans-serif")
-                font.pixelSize: Kirigami.Units.gridUnit * (root.cfg("fontSize", 12) / 15.0)
-                color: root.getColorForValue(batSensor.value, root.cfg("batLevel", "10, 25, 80"), root.cfg("batColor", "#ff8800,#00ff00,#ffff00"))
-            }
-
-            PlasmaComponents.Label {
-                text: Math.round(batSensor.value) + "%"
-                font.family: root.cfg("textFont", "sans-serif")
-                font.pixelSize: Kirigami.Units.gridUnit * (root.cfg("fontSize", 12) / 15.0)
-                color: root.getColorForValue(batSensor.value, root.cfg("batLevel", "10, 25, 80"), root.cfg("batColor", "#ff8800,#00ff00,#ffff00"))
+                PlasmaComponents.Label {
+                    text: Math.round(sensorRef ? sensorRef.value : 0) + "%"
+                    font.family: root.cfg("textFont", "sans-serif")
+                    font.pixelSize: Kirigami.Units.gridUnit * (root.cfg("fontSize", 12) / 15.0)
+                    color: root.getColorForValue(sensorRef ? sensorRef.value : 0, colorConfig.level, colorConfig.color)
+                }
             }
         }
     }

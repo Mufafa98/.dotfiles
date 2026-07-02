@@ -11,4 +11,9 @@ ConfigModel {
         icon: "color-management"
         source: "configSteps.qml"
     }
+    ConfigCategory {
+        name: i18n("Order")
+        icon: "view-list-order"
+        source: "configOrder.qml"
+    }
 }

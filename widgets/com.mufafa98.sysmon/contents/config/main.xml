@@ -24,6 +24,10 @@
         <entry name="iconFont" type="String">
             <default>sans-serif</default>
         </entry>
+        <entry name="sensorOrder" type="String">
+            <default>cpu,ram,bat</default>
+            <label>Order of sensors (comma separated)</label>
+        </entry>
     </group>
 
     <group name="Steps">
